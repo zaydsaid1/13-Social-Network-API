@@ -1,0 +1,24 @@
+{
+  "name": "13-social-networlk-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaydsaid1/13-Social-Networlk-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaydsaid1/13-Social-Networlk-API/issues"
+  },
+  "homepage": "https://github.com/zaydsaid1/13-Social-Networlk-API#readme",
+  "dependencies": {
+    "mongoose": "^7.0.2"
+  }
+}
