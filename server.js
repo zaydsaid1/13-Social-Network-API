@@ -1,6 +1,7 @@
 const express = require("express")
 const mongoose = require("mongoose")
 const routes = require("./routes")
+const db = require("./config/connection")
 
 const app = express()
 const PORT = process.enc.PORT || 3001;
@@ -10,11 +11,10 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use(routes)
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/social-network-api", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-
 mongoose.set("debug", true)
 
-app.listen(PROT, () => console.log(`Now listening on http://localhost:${PORT}`))
+db.once('open', () => {
+    app.listen(PORT, () => {
+      console.log(`- API server running on port ${PORT}!`);
+    });
+  });
