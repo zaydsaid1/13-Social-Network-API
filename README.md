@@ -1,4 +1,4 @@
-# 13-Social-Networlk-API
+# 18-Social-Networlk-API
 
 ## Table of Contents 
 - [User Story](#user-story)
@@ -24,6 +24,11 @@ This is a social network api back-end database created in the UW Coding Bootcamp
 - Ensure express is installed
 - Ensure mongoose is installed
 - Ensure moment is installed
+
+## Walkthough videos
+
+Link to walkthrough video:
+[View here](https://drive.google.com/file/d/1_4mT9AZP0O1fXvVXJjcpGzh7j5NmmBvj/view?usp=sharing)
 
 
 ## Links
